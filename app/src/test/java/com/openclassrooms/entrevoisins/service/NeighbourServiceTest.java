@@ -51,4 +51,11 @@ public class NeighbourServiceTest {
         assertFalse(service.getNeighbours().contains(neighbourToDelete));
     }
 
+    @Test
+    public void addFavoriteWithSuccess() {
+        Neighbour favoriteToAdd = service.getNeighbours().get(0);
+        service.addFavorite(favoriteToAdd);
+        assertTrue(service.getFavorites().contains(favoriteToAdd));
+    }
+
 }
