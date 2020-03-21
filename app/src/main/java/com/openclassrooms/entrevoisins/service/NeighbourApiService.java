@@ -29,7 +29,7 @@ public interface NeighbourApiService {
 
 
     /**
-     * Deletes a neighbour
+     * Deletes a favorite
      * @param favorite
      */
 

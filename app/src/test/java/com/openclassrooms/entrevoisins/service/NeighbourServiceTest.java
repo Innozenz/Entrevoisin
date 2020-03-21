@@ -53,7 +53,7 @@ public class NeighbourServiceTest {
 
     @Test
     public void addFavoriteWithSuccess() {
-        Neighbour favoriteToAdd = service.getNeighbours().get(0);
+        Neighbour favoriteToAdd = service.getFavorites();
         service.addFavorite(favoriteToAdd);
         assertTrue(service.getFavorites().contains(favoriteToAdd));
     }

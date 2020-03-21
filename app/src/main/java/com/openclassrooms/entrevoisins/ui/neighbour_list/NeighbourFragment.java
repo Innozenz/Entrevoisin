@@ -92,6 +92,7 @@ public class NeighbourFragment extends Fragment {
     @Subscribe
     public void onDeleteNeighbour(DeleteNeighbourEvent event) {
         mApiService.deleteNeighbour(event.neighbour);
+        mApiService.deleteFavorite(event.neighbour);
         initList();
     }
 }
