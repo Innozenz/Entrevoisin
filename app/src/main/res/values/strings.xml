@@ -12,5 +12,12 @@
     <string name="personname">personName</string>
     <string name="contentDescription">Profile pictures</string>
     <string name="title_activity_scrolling2">ScrollingActivity2</string>
-    <string name="phone">Saint Pierre du mont à 5km</string>
+    <string name="lieu">Saint Pierre du mont à 5km</string>
+    <string name="phone">+33 6 86 57 90 14</string>
+    <string name="fb">www.facebook.fr/caroline</string>
+    <string name="about">A propos de moi</string>
+    <string name="apropostext">Bonjour ! Je souhaiterais faire de la marche nordique. Pas initiée, je recherche une ou plusieurs personnes susceptibles de m\'accompagner ! J\'aime des jeux de cartes tels la belote et le tarot..</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

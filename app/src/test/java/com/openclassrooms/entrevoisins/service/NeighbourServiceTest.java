@@ -11,8 +11,11 @@ import org.junit.runners.JUnit4;
 
 import java.util.List;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test on Neighbour service
@@ -32,6 +35,13 @@ public class NeighbourServiceTest {
         List<Neighbour> neighbours = service.getNeighbours();
         List<Neighbour> expectedNeighbours = DummyNeighbourGenerator.DUMMY_NEIGHBOURS;
         assertThat(neighbours, IsIterableContainingInAnyOrder.containsInAnyOrder(expectedNeighbours.toArray()));
+    }
+
+    @Test
+    public void getFavoritesWithSuccess() {
+        List<Neighbour> favorites = service.getFavorites();
+        List<Neighbour> expectedFavorites = DummyNeighbourGenerator.DUMMY_FAVORITES;
+        assertThat(favorites, is(equalTo(expectedFavorites.size())));
     }
 
     @Test

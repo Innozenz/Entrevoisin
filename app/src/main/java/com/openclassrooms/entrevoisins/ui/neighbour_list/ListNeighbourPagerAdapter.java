@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 
 public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
+    private final static Fragment[] mFragments = {NeighbourFragment.newInstance(false), NeighbourFragment.newInstance(true)};
 
     public ListNeighbourPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -18,7 +19,7 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public Fragment getItem(int position) {
-        return NeighbourFragment.newInstance();
+        return mFragments[position];
     }
 
     /**
@@ -27,6 +28,6 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 1;
+        return mFragments.length;
     }
 }

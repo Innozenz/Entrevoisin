@@ -2,7 +2,9 @@ package com.openclassrooms.entrevoisins.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.design.widget.FloatingActionButton;
 
+import java.util.List;
 import java.util.Objects;
 
 /**

@@ -24,6 +24,7 @@ import java.util.List;
 
 public class NeighbourFragment extends Fragment {
 
+    private final static String FAVORITE = "FAVORITE";
     private NeighbourApiService mApiService;
     private List<Neighbour> mNeighbours;
     private RecyclerView mRecyclerView;
@@ -33,8 +34,11 @@ public class NeighbourFragment extends Fragment {
      * Create and return a new instance
      * @return @{@link NeighbourFragment}
      */
-    public static NeighbourFragment newInstance() {
+    public static NeighbourFragment newInstance(Boolean favorite) {
         NeighbourFragment fragment = new NeighbourFragment();
+        Bundle bundle = new Bundle();
+        bundle.putBoolean(FAVORITE, favorite);
+        fragment.setArguments(bundle);
         return fragment;
     }
 
@@ -60,7 +64,12 @@ public class NeighbourFragment extends Fragment {
      * Init the List of neighbours
      */
     private void initList() {
-        mNeighbours = mApiService.getNeighbours();
+        if (getArguments().getBoolean(FAVORITE)) {
+            mNeighbours = mApiService.getFavorites();
+
+        } else {
+            mNeighbours = mApiService.getNeighbours();
+        }
         mRecyclerView.setAdapter(new MyNeighbourRecyclerViewAdapter(mNeighbours));
     }
 
