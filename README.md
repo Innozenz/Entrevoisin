@@ -1,15 +1,6 @@
 # Entrevoisins
 Project 3 Openclassroom
 
-
-# Project Title
-
-Step 1 : functionality development as following on the picture
-
-Step 2 : Make 4 tests of Instrumented Unit Tests
-
-Step 3 : Make local Unit Test for each function 
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
