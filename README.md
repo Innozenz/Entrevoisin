@@ -130,10 +130,6 @@ Run on Microsoft Windows, sure it will be done on other system too.
 
 * [Android Studio Ver 3.5](https://developer.android.com/studio/) - To download the software
 
-## Contributing
-
-Nobody for the moment, coming soon...;-))
-
 ## Versioning
 
 I only use Github for the moment for versioning, nothing else
